@@ -1,3 +1,5 @@
+# https://dojang.io/mod/page/view.php?id=2468
+
 # 메타클래스는 클래스의 클래스이다.
 # 즉 클래스는 자신의 메타클래스의 인스턴스다.
 
@@ -6,8 +8,7 @@
 # A = type(name:클래스명, bases:기본클래스, dict:클래스속성)을 수행한다.
 
 class MyInt(type):
-    # __call__ 메서드는 이미 존재하는 클래스의 객체를 생성할 때 호출되는 파이썬의 특수 메서드이다.
-    def __call__(cls, *args, **kwds):
+    def __call__(cls, *args, **kwds): # 클래스로 인스턴스를 만들 때 호출되는 메서드
         print("Here's My int", args, kwds)
         return type.__call__(cls, *args, **kwds)
 
