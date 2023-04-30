@@ -20,3 +20,4 @@ class Singleton:
 s = Singleton() # 클래스를 초기화했지만 객체는 생성하지 않음
 print("Object created", Singleton.getInstance()) # 객체 생성
 s1 = Singleton() # 이미 객체가 생성됨
+# print(s1.getInstance())

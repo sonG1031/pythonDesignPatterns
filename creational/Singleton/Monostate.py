@@ -27,3 +27,8 @@ print("Borg object 'b1':", b1)
 
 print("Object State 'b':", b.__dict__)
 print("Object State 'b1':", b1.__dict__)
+
+print(dir(Borg))
+print("Borg :", id(Borg._Borg__shared_state))
+print("Object State 'b':", id(b.__dict__))
+print("Object State 'b1':", id(b1.__dict__))
